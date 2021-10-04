@@ -1,0 +1,31 @@
+@use "./palettes/btn-style";
+
+.button-operator {
+  @extend btn-style;
+  background-color: #58697F;
+  border: 4px groove #3b4655;
+  color: aliceblue
+}
+
+.button-operator:hover {
+  cursor: pointer;
+}
+
+.button-operator:active {
+  border: 2px solid black;
+}
+
+#equal {
+  @extend btn-style;
+  background-color: #58697F;
+  border: 4px groove #3b4655;
+  color: #CCE1F0;
+}
+
+#equal:hover {
+  cursor: pointer;
+}
+
+#equal:active {
+  border: 2px solid black;
+}

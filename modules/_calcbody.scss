@@ -1,0 +1,10 @@
+.calculator-body {
+  width: 250px;
+  height: 425px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba($color: #0E1111 , $alpha: 1.0);
+}

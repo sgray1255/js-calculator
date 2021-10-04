@@ -1,0 +1,15 @@
+@use "./modules/numbers";
+@use "./modules/clear.scss";
+@use "./modules/operation.scss";
+@use "./modules/casio";
+@use "./modules/screen";
+@use "./modules/calcbody";
+@use "./modules/solar";
+
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
