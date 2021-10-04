@@ -1,0 +1,31 @@
+@use "./palettes/btn-style";
+
+.clear{
+  @extend btn-style;
+  background-color: #E8842E;
+  border: 4px groove #9f5b1f;
+  color: aliceblue;
+}
+
+.all-clear {
+  @extend btn-style;
+  background-color: #E8842E;
+  border: 4px groove #9f5b1f;
+  width: 45px;
+  color: aliceblue;
+}
+.clear:hover {
+  cursor: pointer;
+}
+
+.clear:active {
+  border: 2px solid black;
+}
+
+.all-clear:hover {
+  cursor: pointer;
+}
+
+.all-clear:active {
+  border: 2px solid black;
+}
