@@ -7,9 +7,9 @@ const clear = document.querySelector(".clear");
 const allClear = document.querySelector(".all-clear");
 
 
-let displayOneNumber = '';
-let displayTwoNumber = '';
-let result = parseFloat(null);
+let previousOperand = '';
+let currentOperand = '';
+let result = null;
 let operation = '';
 let decimal = false;
 
@@ -21,44 +21,44 @@ for (let i=0; i < numberButtons.length; i++) {
     } else if(event.target.value === '.' && decimal) {
       return;
     }
-    displayTwoNumber += event.target.value;
-    displayTwo.value = displayTwoNumber;
-    return displayTwoNumber;
+    currentOperand += event.target.value;
+    displayTwo.value = currentOperand;
+    return currentOperand;
   }
+
  )};
 
 for (let i=0; i < operationButtons.length; i++) {
   operationButtons[i].addEventListener("click", (event) => {
     const operationName = operationButtons[i].value;
-    if (!displayTwoNumber) {
+    if (!currentOperand) {
       return;
     }
-    if (displayOneNumber && displayTwoNumber && operation) {
+    if (previousOperand && currentOperand && operation) {
       calculate();
     } else {
-      result = displayTwoNumber;
+      result = currentOperand;
     }
     clearDisplay(operationName);
     operation = operationName;
-    console.log(result);
 });
 
 const clearDisplay = (operationName = ' ') => {
-  displayOneNumber += displayTwoNumber + ' ' + operationName + ' ';
-  displayOne.value = displayOneNumber;
+  previousOperand += currentOperand + ' ' + operationName + ' ';
+  displayOne.value = previousOperand;
   displayTwo.value = ' ';
-  displayTwoNumber = ' ';
+  currentOperand = ' ';
 }};
 
 const calculate = () => {
   if (operation === 'x') {
-    result = parseFloat(result) * parseFloat(displayTwoNumber);
+    result = parseFloat(result) * parseFloat(currentOperand);
   } else if(operation === '/') {
-    result = parseFloat(result) / parseFloat(displayTwoNumber);
+    result = parseFloat(result) / parseFloat(currentOperand);
   } else if(operation === '+') {
-    result = parseFloat(result) + parseFloat(displayTwoNumber);
+    result = parseFloat(result) + parseFloat(currentOperand);
   } else if(operation === '-'){
-    result = parseFloat(result) - parseFloat(displayTwoNumber);
+    result = parseFloat(result) - parseFloat(currentOperand);
   }
 };
 
@@ -71,7 +71,13 @@ equal.addEventListener("click", (event)=>{
 allClear.addEventListener("click", (event)=> {
   displayOne.value = '';
   displayTwo.value = '';
-  displayOneNumber = '';
-  displayTwoNumber = '';
+  previousOperand = '';
+  currentOperand = '';
   result = '';
 })
+
+clear.addEventListener("click", (event)=> {
+  displayTwo.value = '';
+  currentOperand = '';
+  }
+)

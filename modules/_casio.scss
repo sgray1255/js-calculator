@@ -1,0 +1,20 @@
+.casio {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 20px;
+  &__title {
+    
+  }
+  &__subtitle {
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+   
+  }
+  &__subscript {
+    font-size: 10px;
+    color: #3689F5;
+  }
+}

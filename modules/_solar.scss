@@ -1,0 +1,14 @@
+.solar-strip {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 225px;
+  height: 30px;
+  background-color: #5E4F48;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.solar-strip > div {
+  border-right: 2px solid black;
+}
+

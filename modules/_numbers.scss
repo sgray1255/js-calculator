@@ -1,0 +1,33 @@
+@use "./palettes/btn-style";
+@use "./palettes/btn-spacing";
+
+.button-number{
+  @extend btn-style;
+  border: 4px groove #a6b7c3;
+}
+
+.button-number:hover {
+  cursor: pointer;
+}
+
+.button-number:active {
+  border: 2px solid black;
+}
+
+.row {
+  @extend button-space;
+}
+
+.row-one {
+  @extend button-space;
+}
+.row-two {
+  @extend button-space;
+}
+.row-three {
+  @extend button-space;
+}
+.row-four {
+  @extend button-space;
+}
+

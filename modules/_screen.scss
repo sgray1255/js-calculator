@@ -1,0 +1,33 @@
+@use "./palettes/glow-effect";
+
+.display {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  border: 5px groove darkgray;
+  width: 235px;
+  border-radius: 5px;
+  ;
+
+  &__one {
+    border: none;
+    background-color: black;
+    color: gray;
+    text-align: end;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    @extend glow-effect;
+  }
+
+  &__two {
+    border: none;
+    background-color: black;
+    color: gray;
+    height: 55px;
+    font-size: 50px;
+    text-align: end;
+    font-family: 'VT323', sans;
+    @extend glow-effect;
+  }
+}
+

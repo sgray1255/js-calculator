@@ -1,0 +1,162 @@
+btn-style, .button-operator, #equal, .clear, .all-clear, .button-number {
+  font-size: large;
+  font-family: "Gemunu Libre", sans-serif;
+  border: 4px groove gray;
+  border-radius: 5px;
+  background-color: #CCE1F0;
+  width: 40px;
+}
+
+button-space, .row, .row-one, .row-two, .row-three, .row-four {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 7px;
+}
+
+.button-number {
+  border: 4px groove #a6b7c3;
+}
+
+.button-number:hover {
+  cursor: pointer;
+}
+
+.button-number:active {
+  border: 2px solid black;
+}
+
+.clear {
+  background-color: #E8842E;
+  border: 4px groove #9f5b1f;
+  color: aliceblue;
+}
+
+.all-clear {
+  background-color: #E8842E;
+  border: 4px groove #9f5b1f;
+  width: 45px;
+  color: aliceblue;
+}
+
+.clear:hover {
+  cursor: pointer;
+}
+
+.clear:active {
+  border: 2px solid black;
+}
+
+.all-clear:hover {
+  cursor: pointer;
+}
+
+.all-clear:active {
+  border: 2px solid black;
+}
+
+.button-operator {
+  background-color: #58697F;
+  border: 4px groove #3b4655;
+  color: aliceblue;
+}
+
+.button-operator:hover {
+  cursor: pointer;
+}
+
+.button-operator:active {
+  border: 2px solid black;
+}
+
+#equal {
+  background-color: #58697F;
+  border: 4px groove #3b4655;
+  color: #CCE1F0;
+}
+
+#equal:hover {
+  cursor: pointer;
+}
+
+#equal:active {
+  border: 2px solid black;
+}
+
+.casio {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 20px;
+}
+.casio__subtitle {
+  font-size: 12.5px;
+  letter-spacing: 1.5px;
+}
+.casio__subscript {
+  font-size: 10px;
+  color: #3689F5;
+}
+
+glow-effect, .display__one, .display__two {
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #79DBDA, 0 0 6px #79DBDA, 0 0 8px #79DBDA, 0 0 10px #79DBDA, 0 0 12px #79DBDA;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  border: 5px groove darkgray;
+  width: 235px;
+  border-radius: 5px;
+}
+.display__one {
+  border: none;
+  background-color: black;
+  color: gray;
+  text-align: end;
+  font-size: 25px;
+  font-family: "VT323", monospace;
+}
+.display__two {
+  border: none;
+  background-color: black;
+  color: gray;
+  height: 55px;
+  font-size: 50px;
+  text-align: end;
+  font-family: "VT323", sans;
+}
+
+.calculator-body {
+  width: 250px;
+  height: 425px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px #0e1111;
+}
+
+.solar-strip {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 225px;
+  height: 30px;
+  background-color: #5E4F48;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.solar-strip > div {
+  border-right: 2px solid black;
+}
+
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
