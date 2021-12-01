@@ -1,5 +1,5 @@
-@use "./palettes/btn-style";
-@use "./palettes/btn-spacing";
+@use "./partials/btn-style";
+@use "./partials/btn-spacing";
 
 .button-number{
   @extend btn-style;
