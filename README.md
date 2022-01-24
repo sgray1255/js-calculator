@@ -1,16 +1,14 @@
 
 #js-calculator project
 
-MVP: 
 
--Create a calculator with javascript that emulates the look and functionality of a real calculator. 
 
 =======
 JS-calculator project
 
 MVP:
 
-Create a functional calculator using Javascript.
+Create a functional calculator using Javascript, with normal calculator functionality and edge cases in mind. Use click event handlers to make buttons and display. 
 
-Style it to look like a real calculator!
+Style it to look like a real calculator using css.
 
